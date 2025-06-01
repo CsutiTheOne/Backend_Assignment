@@ -13,7 +13,7 @@ router.route("/")
             res.status(200).json(allVehicles);
         })
         .catch(err => {
-            res.send(err);
+            res.send(err.message);
         });
         
     })
@@ -25,7 +25,7 @@ router.route("/")
             res.status(201).json(created);
         })
         .catch(err => {
-            res.send(err);
+            res.send(err.message);
         });
     });
 
@@ -38,7 +38,7 @@ router.route("/:vehicle_id")
             res.status(200).json(found);
         })
         .catch(err => {
-            res.send(err);
+            res.send(err.message);
         });
     })
     //UPDATE VEHICLE
@@ -48,17 +48,17 @@ router.route("/:vehicle_id")
             res.status(200).json(updated);
         })
         .catch(err => {
-            res.send(err);
+            res.send(err.message);
         });
     })
     //DELETE A VEHICLE  
     .delete((req, res) => {
         DB.Vehicles.findByIdAndDelete(req.params.vehicle_id)
         .then(() => {
-            res.status(200).send("Deleted succesfully!");
+            res.status(200).json("Deleted succesfully!");
         })
         .catch(err => {
-            res.send(err);
+            res.send(err.message);
         })
     });
 

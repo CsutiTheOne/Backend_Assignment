@@ -14,7 +14,10 @@ var vehicleSchema = new Schema({
         type: String,
         required: true
     }
-    //It is good idea to extend the schema with availibility
+    //Notes: 
+    // It is good idea to extend the schema with availibility
+    // If we add plug-in hybrid cars, it is useful to differentiate between batterry and gasoline range
+
 });
 
 module.exports = new model("Vehicles", vehicleSchema);
