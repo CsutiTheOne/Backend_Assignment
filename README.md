@@ -10,7 +10,7 @@ git clone
 npm install
 npm start /or/ node app.js
 
-#Routes and request:
+# Routes and request:
 The application only sends a JSON response to every request on any of the routes. No frontend has been created so far.
 
 - /vehicles
