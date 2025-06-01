@@ -7,8 +7,10 @@ Stack used:
 
 # Quickstart
 git clone
+
 npm install
-npm start /or/ node app.js
+
+npm start _or_ node app.js
 
 # Routes and request:
 The application only sends a JSON response to every request on any of the routes. No frontend has been created so far.
