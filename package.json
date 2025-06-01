@@ -1,0 +1,24 @@
+{
+  "name": "backend_assignment",
+  "version": "1.0.0",
+  "description": "Home assignment for a job interview.",
+  "homepage": "https://github.com/CsutiTheOne/Backend_Assignment#readme",
+  "bugs": {
+    "url": "https://github.com/CsutiTheOne/Backend_Assignment/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CsutiTheOne/Backend_Assignment.git"
+  },
+  "license": "ISC",
+  "author": "Csutar Mark Tibor",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.15.1"
+  }
+}
